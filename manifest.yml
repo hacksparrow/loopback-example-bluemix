@@ -1,5 +1,5 @@
 declared-services:
-  cloudant-db:
+  mera-cloudant:
     label: cloudantNoSQLDB
     plan: Lite
 applications:
@@ -7,11 +7,10 @@ applications:
   memory: 256M
   instances: 1
   domain: mybluemix.net
-  name: loopback-example-bluemix
-  host: loopback-example-bluemix
+  name: heyhey
+  host: heyhey
   disk_quota: 1024M
   services:
-  - cloudant-db
+  - mera-cloudant
 env:
   NODE_ENV: bluemix
-

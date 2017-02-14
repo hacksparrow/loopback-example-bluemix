@@ -2,6 +2,9 @@
 var _ = require('lodash');
 // Check attached CloudFoundry services
 var services = process.env.VCAP_SERVICES;
+console.log('--------------------')
+console.log(services)
+console.log('--------------------')
 if (typeof services === 'string') {
   services = JSON.parse(services);
 } else {
